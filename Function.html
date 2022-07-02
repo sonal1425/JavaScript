@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="p1"></div>
+    <div class="mydiv"></div> <br>
+    <div id="p2"></div>
+    <div class="mydiv"> </div><br>
+    <div id="p3"></div>
+    <div class="mydiv"></div> <br>
+    <div id="p4"></div>
+    <div class="mydiv"></div>
+
+
+
+    <script>
+
+
+        // function with para and return
+
+        function funMul(a1, a2) {
+            return a1 * a2
+        }
+
+        document.getElementById("p1").innerHTML = "Multiplication of two no's is" + "  " + funMul(14, 2);
+        document.getElementsByClassName("mydiv")[0].innerHTML = "Multiplication of two no's is" + "  " + funMul(14, 3);
+        console.log(funMul(14, 4));
+
+
+
+
+        // Function with para and no return
+        function funAdd(a, b) {
+            var c = a+b;
+            console.log(c);
+
+
+            document.getElementById("p2").innerHTML = " The Addition of Two No's is" + "  " + c;
+            document.getElementsByClassName("mydiv")[1].innerHTML = "The Addition of Two No's  is" + "  " + c;
+
+        }
+        funAdd(10,20);
+
+
+
+
+
+        // function with return and no para
+
+        function funPercentage() {
+            var no = 15;
+            var total = 80;
+            var p = no / total * 100;
+
+            return p
+        }
+
+        document.getElementById("p3").innerHTML = " The Percentage is" + funPercentage();
+        document.getElementsByClassName("mydiv")[2].innerHTML = "The Percentage is" + funPercentage();
+        console.log(funPercentage());
+
+
+
+
+        // function with No para and No return
+
+        function funDivide() {
+            var x1 = 5;
+            var x2 = 10;
+            var result = x1 / x2;
+
+            document.getElementById("p4").innerHTML = "The Divide of two no's is" + "  " + result;
+            document.getElementsByClassName("mydiv")[3].innerHTML = "The Divide of two no's is" + "  " + result;
+            console.log(result)
+
+        }
+
+        funDivide();
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
